@@ -1,0 +1,59 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wxa7dcb0118926ea5f",
+	"projectname": "%E5%B0%8F%E7%99%BD%E9%9F%B3%E4%B9%90",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "播放",
+					"pathName": "pages/play/musicplay",
+					"query": "params={\"action\":{\"alert\":100002,\"icons\":147324,\"msg\":14,\"switch\":17413891},\"album\":{\"id\":4044657,\"mid\":\"001CnPE31iJ899\",\"name\":\"不爱我就拉倒\",\"subtitle\":\"\",\"title\":\"不爱我就拉倒\",\"title_hilight\":\"<em>不爱我就拉倒</em>\"},\"chinesesinger\":0,\"desc\":\"\",\"desc_hilight\":\"\",\"docid\":\"11117430759074049414\",\"file\":{\"media_mid\":\"0031TAKo0095np\",\"size_128\":3934873,\"size_320\":9836875,\"size_aac\":5916427,\"size_ape\":52141319,\"size_dts\":0,\"size_flac\":52259324,\"size_ogg\":5380665,\"size_try\":0,\"strMediaMid\":\"0031TAKo0095np\",\"try_begin\":54290,\"try_end\":78516},\"fnote\":4009,\"genre\":1,\"grp\":[],\"id\":213922043,\"index_album\":1,\"index_cd\":0,\"interval\":245,\"isonly\":1,\"ksong\":{\"id\":3741405,\"mid\":\"003xNekk1pHAoa\"},\"language\":0,\"lyric\":\"\",\"lyric_hilight\":\"\",\"mid\":\"0031TAKo0095np\",\"mv\":{\"id\":1463760,\"vid\":\"j0026ob1xbs\"},\"name\":\"不爱我就拉倒\",\"newStatus\":1,\"nt\":10000,\"pay\":{\"pay_down\":1,\"pay_month\":1,\"pay_play\":0,\"pay_status\":0,\"price_album\":0,\"price_track\":200,\"time_free\":0},\"pure\":0,\"singer\":[{\"id\":4558,\"mid\":\"0025NhlN2yWrP4\",\"name\":\"周杰伦\",\"title\":\"周杰伦\",\"title_hilight\":\"周杰伦\",\"type\":0,\"uin\":0}],\"status\":0,\"subtitle\":\"\",\"t\":1,\"tag\":10,\"time_public\":\"2018-05-15\",\"title\":\"不爱我就拉倒\",\"title_hilight\":\"<em>不爱我就拉倒</em>\",\"type\":0,\"url\":\"http://stream10.qqmusic.qq.com/213922043.wma\",\"ver\":0,\"volume\":{\"gain\":-8.29699993133545,\"lra\":11.76399993896484,\"peak\":0.9559999704360962}}"
+				},
+				{
+					"id": 1,
+					"name": "搜索",
+					"pathName": "pages/search/musicsearch",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "排行榜",
+					"pathName": "pages/toplist/toplist",
+					"query": "id=4"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='pic'>
+    <text class='pic_icon iconfont icon-yinlemusic214'></text>
+  </view>
+  <view class='text'>
+    <text class='app_name' data-text='小'>小</text>
+    <text class='app_name' data-text='白'>白</text>
+    <text class='app_name' data-text='音'>音</text>
+    <text class='app_name' data-text='乐'>乐</text>
+  </view>
+</view>

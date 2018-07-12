@@ -1,0 +1,29 @@
+<!--pages/musicplay.wxml-->
+<view class='backimg' style='background-image:url({{album}})'></view>
+<view class='background'>
+  <view class='music_detail'>
+    <view class='music_name'>{{title}}</view>
+    <view class='music_siger'>{{siger}}</view>
+  </view>
+  <view class='album'>
+    <image src='{{album}}' style="transform:rotate({{deg}}deg)"></image>
+  </view>
+  <view class='play'>
+    <view class='progress'>
+      <view class='progrss_percent'>
+        <text>{{currentMinute.length>1?currentMinute:"0"+currentMinute}}:{{currentSecond.length>1?currentSecond:"0"+currentSecond}}</text> /
+        <text>{{totalMinute.length>1?totalMinute:"0"+totalMinute}}:{{totalSecond.length>1?totalSecond:"0"+totalSecond}}</text>
+      </view>
+      <slider min="0" max='{{duration}}' step='1' value="{{currentPosition}}" backgroundColor="#999" activeColor="#fff" block-size="12" bindchange="changeProgress"></slider>
+    </view>
+    <view class='start' bindtap='play' wx:if="{{status==0}}">
+      <view class='action iconfont icon-iconplay'></view>
+    </view>
+    <view class="stop" bindtap='pause' wx:if="{{status==1}}">
+      <view class='action iconfont icon-iconstop'></view>
+    </view>
+    <view class='start' bindtap='start' wx:if="{{status==2}}">
+      <view class='action iconfont icon-iconplay'></view>
+    </view>
+  </view>
+</view>

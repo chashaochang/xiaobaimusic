@@ -1,0 +1,59 @@
+<!--pages/music.wxml-->
+<view class='container'>
+  <view class='tabs'>
+    <view class='tab {{index==0?"active":""}}' data-id='0' bindtap='chooseTap'>排行榜</view>
+    <view class='tab {{index==1?"active":""}}' data-id='1' bindtap='chooseTap'>搜索</view>
+  </view>
+  <scroll-view wx:if="{{index==0}}" scroll-y class='ranking_list'>
+    <block wx:for="{{ranking_list}}" wx:key="key">
+      <view class='ranking_tr' bindtap='toTopList' data-id='{{item.id}}'>
+        <view class='ranking_pic'>
+          <image src='{{item.picUrl}}'></image>
+        </view>
+        <view class='ranking_content'>
+          <view class='topTitle'>{{item.topTitle}}</view>
+          <view class='music_item'>
+            <view>1</view>
+            <view class='music_name'>{{item.songList[0].songname}}</view>
+            <view class='singer_name'>-{{item.songList[0].singername}}</view>
+          </view>
+          <view class='music_item'>
+            <view>2</view>
+            <view class='music_name'>{{item.songList[1].songname}}</view>
+            <view class='singer_name'>-{{item.songList[1].singername}}</view>
+          </view>
+          <view class='music_item'>
+            <view>3</view>
+            <view class='music_name'>{{item.songList[2].songname}}</view>
+            <view class='singer_name'>-{{item.songList[2].singername}}</view>
+          </view>
+        </view>
+        <view class='qianjin'>
+          <view class='iconfont icon-qianjin'></view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view wx:if="{{index==1}}" class='search_content'>
+    <view class='sousuo'>
+      <view class='iconfont icon-sousuo' style='line-height:60rpx;'></view>
+    </view>
+    <input type='text' placeholder='请输入搜索的歌名' placeholder-class='search_placeholder' value='{{music_name}}' bindinput='bindinput'></input>
+    <view class='clear' wx:if="{{music_name.length>0}}" bindtap='clear'>
+      <view class='iconfont icon-guanbi clear_pic'></view>
+    </view>
+    <button bindtap='search'>搜索</button>
+  </view>
+  <scroll-view scroll-y class='result_list'>
+    <block wx:if="{{music_list.length>0}}" wx:for='{{music_list}}' wx:key="key">
+      <view class='result_tr' bindtap='play' data-id='{{item.index}}'>
+        <view class='pic iconfont icon-yinle'></view>
+        <view class='music_detail'>
+          <view class='music_name'>{{item.name}}</view>
+          <view class='music_singer'>{{item.singer}}</view>
+        </view>
+        <view class='music_long'>{{item.long}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

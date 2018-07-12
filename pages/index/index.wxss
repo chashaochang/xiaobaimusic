@@ -1,0 +1,30 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.container{
+  justify-content: center;
+}
+.pic_icon{
+  font-size: 300rpx;
+  color: #31c27c;
+  font-weight: 600;
+}
+.text{
+  line-height: 300rpx;
+  font-size: 120rpx;
+  font-weight: 600;
+  letter-spacing:20rpx; 
+}
+.app_name{
+  position: relative;
+  color:#bbb;
+  content: attr(data-text);
+}
+.app_name::before{
+  position: absolute;
+  color:#31c27c;
+  content: attr(data-text);
+  width: 45%;
+  overflow: hidden;
+}

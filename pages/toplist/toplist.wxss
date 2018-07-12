@@ -1,0 +1,94 @@
+/* pages/toplist/toplist.wxss */
+page{
+  height: 100%;
+}
+.container{
+  padding: 0;
+}
+.top{
+  width: 100%;
+  flex: 2;
+}
+.music_list{
+  width: 100%;
+  flex: 5;
+  background:#fff;
+  z-index:999;
+}
+.count_box{
+  height: 108rpx;
+  margin: 0 32rpx -20rpx 32rpx;
+  display: flex;
+  align-items: center;
+}
+.count_box__desc{
+  font-size: 28rpx;
+  color: #999;
+}
+.list_li{
+  display: flex;
+  align-items: center;
+}
+.list_order{
+  font-size: 32rpx;
+  width: 90rpx;
+  margin-right: -32rpx;
+  text-align: center;
+}
+.list_bd{
+  padding: 20rpx 32rpx;
+  overflow: hidden;
+  width: 660rpx;
+}
+.list_tit {
+  font-size: 32rpx;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list_desc{
+  font-size: 28rpx;
+  color: #999;
+  width: 
+}
+.top{
+  position: relative;
+  height: 340rpx;
+}
+.top image{
+  width: 100%;
+  filter: blur(10px);
+  position: absolute;
+  z-index: 1;
+}
+.album{
+  background: transparent;
+  position: relative;
+  z-index: 999999;
+  height: 100%;
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+}
+.album__media{
+  position: relative;
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.album__media image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter:none;
+}
+.album__bd{
+  color: #fff;
+}
+.album__desc {
+  max-height: 72rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+  font-size: 24rpx;
+}

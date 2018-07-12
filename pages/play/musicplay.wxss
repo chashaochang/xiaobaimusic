@@ -1,0 +1,91 @@
+/* pages/musicplay.wxss */
+page{
+  height: 100%;
+}
+.background{
+  height: 100%;
+  z-index: 999;
+}
+.backimg{
+  position: fixed;
+  filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+
+.music_detail{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  height:150rpx;
+  z-index: 999;
+  position: relative;
+  padding-top: 20rpx;
+}
+.album{
+  position: relative;
+  background: transparent;
+  height: 600rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: none;
+}
+.album image{
+  background: #fff;
+  border-radius: 50%;
+  height: 550rpx;
+  width: 550rpx;
+}
+.music_name{
+  font-size: 40rpx;
+  line-height: 60rpx;
+}
+.music_siger{
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.play{
+  height: 435rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.start,.stop{
+  position: relative;
+  z-index: 999;
+  color: white;
+}
+.action{
+  font-size: 60rpx;
+  border: 3px solid #f4f4f4;
+  width: 60rpx;
+  height: 60rpx;
+  padding: 20rpx;
+  line-height: 60rpx;
+  border-radius: 50%;
+}
+.progress{
+  margin: 40rpx;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  width: 100%;
+  align-items:flex-end;
+}
+.progrss_percent{
+  color: white;
+  margin-right: 30rpx;
+}
+.progrss_percent text{
+  font-size: 28rpx;
+}
+.progress slider{
+  width: 90%;
+}

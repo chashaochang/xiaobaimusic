@@ -1,0 +1,32 @@
+<!--pages/toplist/toplist.wxml-->
+<view class='container'>
+  <view class='top'>
+    <image wx:if="{{list_info.topinfo.pic_album}}" src='{{list_info.topinfo.pic_album}}'></image>
+    <view class='album'>
+      <view class='album__media'>
+        <image wx:if="{{list_info.topinfo.pic_album}}" src='{{list_info.topinfo.pic_album}}'></image>
+      </view>
+      <view class='album__bd'>
+        <view class='album__name'>{{list_info.topinfo.ListName}}</view>
+        <view class='album__desc'>第{{list_info.day_of_year}}天</view>
+        <view class='album__desc'>{{list_info.date}} 更新</view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y class='music_list'>
+    <view wx:if="{{list_info.songlist.length>0}}" class="count_box"> 
+      <view class='count_box__desc'>
+        排行榜 共{{list_info.songlist.length}}首
+      </view>
+    </view>
+    <block wx:if="{{songlist.length>0}}" wx:for="{{songlist}}" wx:key="key" wx:for-index="index">
+      <view class='list_li' bindtap='play' data-data='{{item.data}}'>
+        <view class='list_order' style='color:{{index<3?"#ff400b":"#999"}}'>{{index+1}}</view>
+        <view class='list_bd'>
+          <view class='list_tit'>{{item.data.albumname}}</view>
+          <view class='list_desc'>{{item.data.singer[0].name}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,181 @@
+/* pages/music.wxss */
+.container{
+  padding: 0;
+  background: #f4f4f4;
+}
+.search_content{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 20rpx 0;
+  margin-top: 2px;
+}
+.sousuo{
+  margin-left: 20rpx;
+  padding-left: 20rpx;
+  background: white;
+  border-radius: 6rpx;
+}
+.clear{
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.clear_pic{
+  background-color: #999;
+  border-radius: 50%;
+  color: white;
+  padding: 4rpx;
+  font-size: 26rpx;
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+}
+.search_content input{
+  height: 60rpx;
+  flex: 1;
+  padding:0 20rpx;
+  font-size: 30rpx;
+  background: white;
+  border-radius: 6rpx;
+}
+.search_content button{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  width: 120rpx;
+  margin: 0 20rpx;
+  padding: 0;
+  color: #666;
+}
+.search_placeholder{
+  font-size: 30rpx;
+}
+.result_list{
+  height:1026;
+  display: flex;
+}
+
+.result_tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 30rpx;
+  height: 110rpx;
+}
+.result_tr .pic{
+  width: 110rpx;
+  height: 100%;
+  line-height: 110rpx;
+  font-size: 50rpx;
+}
+.result_th{
+  flex: 1;
+}
+.result_td{
+  flex: 1;
+}
+.result_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music_detail{
+  text-align: left;
+  width: 500rpx;
+}
+.music_name{
+  font-size: 32rpx;
+}
+.music_singer{
+  font-size: 22rpx;
+  color: #999;
+}
+.music_long{
+  position: relative;
+  right: 0;
+  width: 140rpx;
+  color: #999;
+}
+.tabs{
+  display: flex;
+  height: 80rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  width: 100%;
+  color: #666;
+  background: #fff;
+}
+.tab{
+  flex: 1;
+  border-bottom: 3px solid #fff;
+  height: 100%;
+  line-height: 80rpx;
+}
+.active{
+  border-bottom: 3px solid #31c27c;
+  color: #31c27c;
+}
+.music_item{
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  color: rgba(0,0,0,.5);
+  align-items: center;
+  width: 460rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.singer_name{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ranking_list{
+  height:1086rpx;
+  display: flex;
+  padding: 20rpx 0;
+}
+.ranking_pic image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.ranking_tr{
+  display: flex;
+  margin: 0 20rpx 20rpx 20rpx;
+  background: #fff;
+  align-items: center;
+}
+.ranking_pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 10;
+}
+.ranking_content{
+   margin-left:20rpx;
+   width: 490rpx;
+   flex:50;
+}
+.topTitle{
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+.music_name{
+  color: #000;
+  margin-left: 8px;
+  margin-right: 5px;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+}
+.qianjin{
+  color: #999;
+}
